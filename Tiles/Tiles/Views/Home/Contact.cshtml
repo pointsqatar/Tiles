@@ -1,0 +1,258 @@
+﻿
+@{
+    ViewBag.Title = "Contact";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlfk9irvDgU0n-21GLfrWZ188OIlMNIMI&callback=initMap">
+</script>
+
+<div class="content-box">
+    <div id="custom-html">
+        <div class="container">
+        </div>
+    </div>
+
+    <div class="main-row">
+        <div class="container">
+            <div class="main">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="moduletable   mod_breadcrumbs">
+                            <div class="module_content">
+                                <div class="breadcrumbs ">
+                                    <ol class="breadcrumb">
+                                        <li class="showHere">You are here: </li>
+                                        <li><a href="@Url.Action("index","home")" class="pathway">Home</a></li>
+                                        <li>Contacts</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="top-content">
+                            <div class="moduletable  mod_6map">
+                                <div class="module_content">
+                                    <script type="text/javascript">
+
+
+                                        var map174;
+                                        var marker174 = null;
+
+                                        var markerParam174 = { title: 'marker', image: 'https://livedemo00.template-help.com/virtuemart_53948/images/marker.png', contentInfo: "lorem ipsum dolor", };
+                                        var image174 = new google.maps.MarkerImage(
+                                        markerParam174.image,
+                                        new google.maps.Size(53, 56),
+                                        new google.maps.Point(0, 0),
+                                        new google.maps.Point(26.5, 56)
+                                        );
+
+                                        setTimeout(function () {
+                                            location6map_codeAddress174();
+                                        }, 5);
+
+                                        // Create an array of styles.
+                                        var styles174 = [{ "featureType": "all", "elementType": "labels.text.fill", "stylers": [{ "saturation": 36 }, { "color": "#000000" }, { "lightness": 40 }] }, { "featureType": "all", "elementType": "labels.text.stroke", "stylers": [{ "visibility": "on" }, { "color": "#000000" }, { "lightness": 16 }] }, { "featureType": "all", "elementType": "labels.icon", "stylers": [{ "visibility": "off" }] }, { "featureType": "administrative", "elementType": "geometry.fill", "stylers": [{ "color": "#000000" }, { "lightness": 20 }] }, { "featureType": "administrative", "elementType": "geometry.stroke", "stylers": [{ "color": "#000000" }, { "lightness": 17 }, { "weight": 1.2 }] }, { "featureType": "landscape", "elementType": "geometry", "stylers": [{ "color": "#000000" }, { "lightness": 20 }] }, { "featureType": "poi", "elementType": "geometry", "stylers": [{ "color": "#000000" }, { "lightness": 21 }] }, { "featureType": "road.highway", "elementType": "geometry.fill", "stylers": [{ "color": "#000000" }, { "lightness": 17 }] }, { "featureType": "road.highway", "elementType": "geometry.stroke", "stylers": [{ "color": "#000000" }, { "lightness": 29 }, { "weight": 0.2 }] }, { "featureType": "road.arterial", "elementType": "geometry", "stylers": [{ "color": "#000000" }, { "lightness": 18 }] }, { "featureType": "road.local", "elementType": "geometry", "stylers": [{ "color": "#000000" }, { "lightness": 16 }] }, { "featureType": "transit", "elementType": "geometry", "stylers": [{ "color": "#000000" }, { "lightness": 19 }] }, { "featureType": "water", "elementType": "geometry", "stylers": [{ "color": "#000000" }, { "lightness": 17 }] }];
+
+                                        function location6map_codeAddress174() {
+                                            var geocoder = new google.maps.Geocoder();
+
+                                            myOptions = {
+                                                zoom: 10,
+                                                panControl: true,
+                                                zoomControl: true,
+                                                mapTypeControl: true,
+                                                scaleControl: true,
+                                                streetViewControl: true,
+                                                scrollwheel: false,
+                                                overviewMapControl: true,
+                                                rotateControl: true,
+                                                mapTypeId: google.maps.MapTypeId.ROADMAP
+                                            }
+
+                                            map174 = new google.maps.Map(document.getElementById("map_canvas-174"), myOptions);
+                                            map174.setOptions({ styles: styles174 });
+                                            var address = 'New York';
+                                            geocoder.geocode({ 'address': address }, function (results, status) {
+                                                if (status == google.maps.GeocoderStatus.OK) {
+                                                    map174.setCenter(results[0].geometry.location);
+                                                    if (marker174) marker174.setMap(null);
+
+                                                    marker174 = new google.maps.Marker({
+                                                        title: markerParam174.title,
+                                                        icon: image174,
+                                                        map: map174,
+                                                        position: results[0].geometry.location,
+                                                        draggable: false,
+                                                        animation: google.maps.Animation.DROP
+                                                    });
+
+                                                    if (markerParam174.contentInfo) {
+                                                        var infowindow = new google.maps.InfoWindow({
+                                                            content: markerParam174.contentInfo
+                                                        });
+                                                        if (markerParam174.showContentOnload) {
+                                                            infowindow.open(map174, marker174);
+                                                        }
+
+
+                                                        google.maps.event.addListener(marker174, 'click', function () {
+                                                            infowindow.open(map174, marker174);
+                                                        });
+
+
+                                                    }
+                                                } else {
+                                                    alert("Please check the accuracy of Address");
+                                                }
+                                            });
+                                        }
+
+                                        jQuery(document).ready(function () {
+                                            var mod6map = 2030;
+                                            var mod6mapParrent = jQuery('#map_canvas-174').parent().width();
+                                            if (mod6map >= mod6mapParrent) { jQuery('#map_canvas-174').width(mod6mapParrent); }
+                                            else { jQuery('#map_canvas-174').width(mod6map); }
+                                            jQuery(window).resize(function () {
+                                                var mod6map = 2030;
+                                                var mod6mapParrent = jQuery('#map_canvas-174').parent().width();
+                                                if (mod6map >= mod6mapParrent) {
+                                                    jQuery('#map_canvas-174').width(mod6mapParrent);
+                                                } else {
+                                                    jQuery('#map_canvas-174').width(mod6map);
+                                                }
+                                            });
+                                        });
+                                    </script>
+                                    <div id="map_canvas-174" class="mod6map"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="main-content">
+                            <div class="page contact-view contact-view__">
+                                <div class="contact_miscinfo">
+                                    <div class="contact_misc">
+                                        <p>Phasellus mollis hendrerit magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tortor ante, fringilla porttitor gravida at, ullamcorper non lacus. Integer rhoncus sem sit amet ante accumsan pulvinar. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut mollis, sapien in porta tristique, ante tellus sagittis neque, eu vehicula mi lorem a tellus.</p>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-9">
+                                        <div class="contact_form">
+                                            <form id="contact-form" action="/virtuemart_53948/index.php/contacts" method="post" class="form-validate">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="row">
+                                                            <div class="form-group col-md-4">
+                                                                <label id="jform_contact_name-lbl" for="jform_contact_name" class="hasTooltip required" title="&lt;strong&gt;Name&lt;/strong&gt;&lt;br /&gt;Your name.">
+                                                                    Name<span class="star">&#160;*</span>
+                                                                </label> <input type="text" name="jform[contact_name]" id="jform_contact_name" value="" class="required" size="30" required aria-required="true" />
+                                                            </div>
+                                                            <div class="form-group col-md-4">
+                                                                <label id="jform_contact_email-lbl" for="jform_contact_email" class="hasTooltip required" title="&lt;strong&gt;Email&lt;/strong&gt;&lt;br /&gt;Email Address for contact.">
+                                                                    Email<span class="star">&#160;*</span>
+                                                                </label> <input type="email" name="jform[contact_email]" class="validate-email required" id="jform_contact_email" value="" size="30" required aria-required="true" />
+                                                            </div>
+                                                            <div class="form-group col-md-4">
+                                                                <label id="jform_contact_emailmsg-lbl" for="jform_contact_emailmsg" class="hasTooltip required" title="&lt;strong&gt;Subject&lt;/strong&gt;&lt;br /&gt;Enter the subject of your message here.">
+                                                                    Subject<span class="star">&#160;*</span>
+                                                                </label> <input type="text" name="jform[contact_subject]" id="jform_contact_emailmsg" value="" class="required" size="60" required aria-required="true" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <label id="jform_contact_message-lbl" for="jform_contact_message" class="hasTooltip required" title="&lt;strong&gt;Message&lt;/strong&gt;&lt;br /&gt;Enter your message here.">
+                                                                Message<span class="star">&#160;*</span>
+                                                            </label> <textarea name="jform[contact_message]" id="jform_contact_message" cols="50" rows="10" class="required" required aria-required="true"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group1">
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="checkbox">
+                                                            <label id="jform_contact_email_copy-lbl" for="jform_contact_email_copy" class="hasTooltip" title="&lt;strong&gt;Send Copy to Yourself&lt;/strong&gt;&lt;br /&gt;Sends a copy of the message to the address you have supplied.">
+                                                                Send Copy to Yourself
+                                                            </label> <input type="checkbox" name="jform[contact_email_copy]" id="jform_contact_email_copy" value="1" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <button class="btn btn-default button validate" type="submit">Send Email</button>
+                                                    </div>
+                                                </div>
+                                                <input type="hidden" name="option" value="com_contact" />
+                                                <input type="hidden" name="task" value="contact.submit" />
+                                                <input type="hidden" name="return" value="" />
+                                                <input type="hidden" name="id" value="1:store-manager" />
+                                                <input type="hidden" name="7eb5e86228e0985a230e60feb95c56a2" value="1" />
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="contact_image item_image">
+                                            <img src="~/images/user.png" alt="Contact image" />
+                                        </div>
+                                        <h2 class="contact_position">Store manager</h2>
+
+                                        <div class="contact_address">
+                                            <span class="jicons-icons">
+                                                <img src="/virtuemart_53948/media/contacts/images/con_address.png" alt="Address: " />
+                                            </span>
+                                            <address>
+                                                <span class="contact_street">
+                                                    138 Atlantis Ln
+                                                </span>
+                                                <span class="contact_suburb">
+                                                    Kingsport
+                                                </span>
+                                                <span class="contact_state">
+                                                    Illinois
+                                                </span>
+                                                <span class="contact_postcode">
+                                                    121164
+                                                </span>
+                                                <span class="contact_country">
+                                                    USA
+                                                </span>
+                                            </address>
+                                        </div>
+                                        <div class="contact_contactinfo">
+                                            <p>
+                                                <span class="jicons-icons">
+                                                    <img src="/virtuemart_53948/media/contacts/images/con_tel.png" alt="Phone: " />
+                                                </span>
+                                                <span class="contact_telephone">
+                                                    +1 800 559 6580
+                                                </span>
+                                            </p>
+                                            <p>
+                                                <span class="jicons-icons">
+                                                    <img src="/virtuemart_53948/media/contacts/images/con_fax.png" alt="Fax: " />
+                                                </span>
+                                                <span class="contact_fax">
+                                                    +1 800 559 6580
+                                                </span>
+                                            </p>
+                                            <p>
+                                                <span class="jicons-icons">
+                                                    <img src="/virtuemart_53948/media/contacts/images/con_mobile.png" alt="Mobile: " />
+                                                </span>
+                                                <span class="contact_mobile">
+                                                    +1 504 889 9898
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

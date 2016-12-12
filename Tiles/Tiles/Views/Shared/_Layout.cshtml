@@ -1,0 +1,424 @@
+﻿<!DOCTYPE html>
+<!--[if IEMobile]><html class="iemobile" lang="en-gb"> <![endif]-->
+<!--[if IE 8]> <html class="no-js ie8" lang="en-gb"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en-gb">
+<head>
+    <script type="text/javascript">
+        //<![CDATA[
+        try { if (!window.CloudFlare) { var CloudFlare = [{ verbose: 0, p: 0, byc: 0, owlid: "cf", bag2: 1, mirage2: 0, oracle: 0, paths: { cloudflare: "/cdn-cgi/nexp/dok3v=1613a3a185/" }, atok: "026ec6586f28210ef035b36be4693fdb", petok: "d443da345c319a7800d610ee0e7ef3e6c57ccfe3-1481524489-1800", zone: "template-help.com", rocket: "0", apps: { "abetterbrowser": { "ie": "7" } } }]; !function (a, b) { a = document.createElement("script"), b = document.getElementsByTagName("script")[0], a.async = !0, a.src = "//ajax.cloudflare.com/cdn-cgi/nexp/dok3v=088620b277/cloudflare.min.js", b.parentNode.insertBefore(a, b) }() } } catch (e) { };
+        //]]>
+    </script>
+    <link href='//fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="~/theme589/favicon.ico" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <script type="text/javascript">window.NREUM || (NREUM = {}), __nr_require = function (e, t, n) { function r(n) { if (!t[n]) { var o = t[n] = { exports: {} }; e[n][0].call(o.exports, function (t) { var o = e[n][1][t]; return r(o || t) }, o, o.exports) } return t[n].exports } if ("function" == typeof __nr_require) return __nr_require; for (var o = 0; o < n.length; o++) r(n[o]); return r }({ 1: [function (e, t, n) { function r() { } function o(e, t, n) { return function () { return i(e, [(new Date).getTime()].concat(u(arguments)), t ? null : this, n), t ? void 0 : this } } var i = e("handle"), a = e(2), u = e(3), c = e("ee").get("tracer"), f = NREUM; "undefined" == typeof window.newrelic && (newrelic = f); var s = ["setPageViewName", "setCustomAttribute", "setErrorHandler", "finished", "addToTrace", "inlineHit"], l = "api-", p = l + "ixn-"; a(s, function (e, t) { f[t] = o(l + t, !0, "api") }), f.addPageAction = o(l + "addPageAction", !0), f.setCurrentRouteName = o(l + "routeName", !0), t.exports = newrelic, f.interaction = function () { return (new r).get() }; var d = r.prototype = { createTracer: function (e, t) { var n = {}, r = this, o = "function" == typeof t; return i(p + "tracer", [Date.now(), e, n], r), function () { if (c.emit((o ? "" : "no-") + "fn-start", [Date.now(), r, o], n), o) try { return t.apply(this, arguments) } finally { c.emit("fn-end", [Date.now()], n) } } } }; a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","), function (e, t) { d[t] = o(p + t) }), newrelic.noticeError = function (e) { "string" == typeof e && (e = new Error(e)), i("err", [e, (new Date).getTime()]) } }, {}], 2: [function (e, t, n) { function r(e, t) { var n = [], r = "", i = 0; for (r in e) o.call(e, r) && (n[i] = t(r, e[r]), i += 1); return n } var o = Object.prototype.hasOwnProperty; t.exports = r }, {}], 3: [function (e, t, n) { function r(e, t, n) { t || (t = 0), "undefined" == typeof n && (n = e ? e.length : 0); for (var r = -1, o = n - t || 0, i = Array(o < 0 ? 0 : o) ; ++r < o;) i[r] = e[t + r]; return i } t.exports = r }, {}], ee: [function (e, t, n) { function r() { } function o(e) { function t(e) { return e && e instanceof r ? e : e ? c(e, u, i) : i() } function n(n, r, o) { if (!p.aborted) { e && e(n, r, o); for (var i = t(o), a = v(n), u = a.length, c = 0; c < u; c++) a[c].apply(i, r); var f = s[w[n]]; return f && f.push([y, n, r, i]), i } } function d(e, t) { b[e] = v(e).concat(t) } function v(e) { return b[e] || [] } function g(e) { return l[e] = l[e] || o(n) } function m(e, t) { f(e, function (e, n) { t = t || "feature", w[n] = t, t in s || (s[t] = []) }) } var b = {}, w = {}, y = { on: d, emit: n, get: g, listeners: v, context: t, buffer: m, abort: a, aborted: !1 }; return y } function i() { return new r } function a() { (s.api || s.feature) && (p.aborted = !0, s = p.backlog = {}) } var u = "nr@context", c = e("gos"), f = e(2), s = {}, l = {}, p = t.exports = o(); p.backlog = s }, {}], gos: [function (e, t, n) { function r(e, t, n) { if (o.call(e, t)) return e[t]; var r = n(); if (Object.defineProperty && Object.keys) try { return Object.defineProperty(e, t, { value: r, writable: !0, enumerable: !1 }), r } catch (i) { } return e[t] = r, r } var o = Object.prototype.hasOwnProperty; t.exports = r }, {}], handle: [function (e, t, n) { function r(e, t, n, r) { o.buffer([e], r), o.emit(e, t, n) } var o = e("ee").get("handle"); t.exports = r, r.ee = o }, {}], id: [function (e, t, n) { function r(e) { var t = typeof e; return !e || "object" !== t && "function" !== t ? -1 : e === window ? 0 : a(e, i, function () { return o++ }) } var o = 1, i = "nr@id", a = e("gos"); t.exports = r }, {}], loader: [function (e, t, n) { function r() { if (!h++) { var e = y.info = NREUM.info, t = l.getElementsByTagName("script")[0]; if (setTimeout(f.abort, 3e4), !(e && e.licenseKey && e.applicationID && t)) return f.abort(); c(b, function (t, n) { e[t] || (e[t] = n) }), u("mark", ["onload", a()], null, "api"); var n = l.createElement("script"); n.src = "https://" + e.agent, t.parentNode.insertBefore(n, t) } } function o() { "complete" === l.readyState && i() } function i() { u("mark", ["domContent", a()], null, "api") } function a() { return (new Date).getTime() } var u = e("handle"), c = e(2), f = e("ee"), s = window, l = s.document, p = "addEventListener", d = "attachEvent", v = s.XMLHttpRequest, g = v && v.prototype; NREUM.o = { ST: setTimeout, CT: clearTimeout, XHR: v, REQ: s.Request, EV: s.Event, PR: s.Promise, MO: s.MutationObserver }, e(1); var m = "" + location, b = { beacon: "bam.nr-data.net", errorBeacon: "bam.nr-data.net", agent: "js-agent.newrelic.com/nr-998.min.js" }, w = v && g && g[p] && !/CriOS/.test(navigator.userAgent), y = t.exports = { offset: a(), origin: m, features: {}, xhrWrappable: w }; l[p] ? (l[p]("DOMContentLoaded", i, !1), s[p]("load", r, !1)) : (l[d]("onreadystatechange", o), s[d]("onload", r)), u("mark", ["firstbyte", a()], null, "api"); var h = 0 }, {}] }, {}, ["loader"]);</script>
+    <title>@ViewBag.Title</title>
+    <link href="~/theme589/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    <link href="https://livedemo00.template-help.com/virtuemart_53948/index.php/component/search/?Itemid=145&amp;format=opensearch" rel="search" title="Search Ceramica" type="application/opensearchdescription+xml" />
+    <link rel="stylesheet" href="~/theme589/css/normalize.css" type="text/css" />
+    <link rel="stylesheet" href="~/theme589/css/font-awesome.css" type="text/css" />
+    <link rel="stylesheet" href="~/theme589/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="~/theme589/css/vm/allvmscripts.css" type="text/css" />
+    <link rel="stylesheet" href="~/theme589/css/vm/virtuemart.css" type="text/css" />
+    <link rel="stylesheet" href="~/theme589/css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="~/theme589/css/template.css" type="text/css" />
+    <link rel="stylesheet" href="https://livedemo00.template-help.com/virtuemart_53948/modules/mod_socialmedialinks/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://livedemo00.template-help.com/virtuemart_53948/modules/mod_6map/assets/css/css-map.css" type="text/css" />
+    <link rel="stylesheet" href="https://livedemo00.template-help.com/virtuemart_53948/modules/mod_bootstrapmegamenu/assets/superfish.css" type="text/css" />
+    <link rel="stylesheet" href="https://livedemo00.template-help.com/virtuemart_53948/modules/mod_bootstrapmegamenu/assets/slicknav.css" type="text/css" />
+    <link rel="stylesheet" href="~/virtuemart_53948/components/com_virtuemart/assets/css/facebox.css?vmver=8828" type="text/css" />
+    <link rel="stylesheet" href="~/virtuemart_53948/components/com_virtuemart/assets/css/chosen.css?vmver=8828" type="text/css" />
+    <link rel="stylesheet" href="~/virtuemart_53948/media/css/modal.css" type="text/css" />
+    <style type="text/css">
+        #map_canvas-174 {
+            margin: 0;
+            padding: 0;
+            height: 290px;
+        }
+
+        #facebox .content {
+            display: block !important;
+            height: 480px !important;
+            overflow: auto;
+            width: 560px !important;
+        }
+    </style>
+    <script src="~/virtuemart_53948/media/js/mootools-core.js" type="text/javascript"></script>
+    <script src="~/virtuemart_53948/media/js/core.js" type="text/javascript"></script>
+    <script src="~/virtuemart_53948/media/js/jquery.min.js" type="text/javascript"></script>
+    <script src="~/virtuemart_53948/media/js/jquery-noconflict.js" type="text/javascript"></script>
+    <script src="~/virtuemart_53948/media/js/jquery-migrate.min.js" type="text/javascript"></script>
+    <script src="~/virtuemart_53948/media/js/punycode.js" type="text/javascript"></script>
+    <script src="~/virtuemart_53948/media/js/validate.js" type="text/javascript"></script>
+    <script src="~/virtuemart_53948/media/js/mootools-more.js" type="text/javascript"></script>
+    <script src="~/virtuemart_53948/media/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="~/virtuemart_53948/media/js/html5fallback.js" type="text/javascript"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false" type="text/javascript"></script>
+    <script src="https://livedemo00.template-help.com/virtuemart_53948/modules/mod_bootstrapmegamenu/js/superfish.js" type="text/javascript"></script>
+    <script src="https://livedemo00.template-help.com/virtuemart_53948/modules/mod_bootstrapmegamenu/js/hoverIntent.js" type="text/javascript"></script>
+    <script src="https://livedemo00.template-help.com/virtuemart_53948/modules/mod_bootstrapmegamenu/js/sftouchscreen.js" type="text/javascript"></script>
+    <script src="https://livedemo00.template-help.com/virtuemart_53948/modules/mod_bootstrapmegamenu/js/jquery.slicknav.js" type="text/javascript"></script>
+    <script src="~/virtuemart_53948/components/com_virtuemart/assets/js/facebox.js?vmver=8828" type="text/javascript" defer="defer"></script>
+    <script src="~/theme589/js/chosen.jquery.min.js?vmver=8828" type="text/javascript"></script>
+    <script src="~/virtuemart_53948/components/com_virtuemart/assets/js/dynupdate.js?vmver=8828" type="text/javascript"></script>
+    <script src="~/virtuemart_53948/components/com_virtuemart/assets/js/vmsite.js?vmver=8828" type="text/javascript"></script>
+    <script src="~/virtuemart_53948/media/js/modal.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        window.setInterval(function () { var r; try { r = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP") } catch (e) { } if (r) { r.open("GET", "./", true); r.send(null) } }, 840000);
+        jQuery(function ($) {
+            $('.hasTip').each(function () {
+                var title = $(this).attr('title');
+                if (title) {
+                    var parts = title.split('::', 2);
+                    var mtelement = document.id(this);
+                    mtelement.store('tip:title', parts[0]);
+                    mtelement.store('tip:text', parts[1]);
+                }
+            });
+            var JTooltips = new Tips($('.hasTip').get(), { "maxTitleChars": 50, "fixed": false });
+        });
+        jQuery(document).ready(function () {
+            jQuery('.hasTooltip').tooltip({ "html": true, "container": "body" });
+        });
+        jQuery(function ($) {
+            SqueezeBox.initialize({});
+            SqueezeBox.assign($('a.modal').get(), {
+                parse: 'rel'
+            });
+        });
+        function jModalClose() {
+            SqueezeBox.close();
+        }
+    </script>
+    <script type="text/javascript">
+        (function () {
+            Joomla.JText.load({ "JLIB_FORM_FIELD_INVALID": "Invalid field:&#160" });
+        })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="apple-touch-icon-precomposed" href="~/images/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="~/images/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="~/images/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="~/images/apple-touch-icon-144x144-precomposed.png">
+    <!--[if lt IE 9]><div style='clear:both;height:59px;padding:0 15px 0 15px;position:relative;z-index:10000;text-align:center;'><a href="https://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="https://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+    <script type="text/javascript">
+        var animate = '1';
+    </script>
+</head>
+
+<body class="@ViewBag.BodyClass">
+    <div class="wrapper">
+        <div class="boxed-layout">
+            <div id="wrapper" class="z-index">
+                <div class="cotainer-top">
+                    <div class="header-row">
+                        <div class="header">
+                            <div class="logo-fleft">
+
+                                <div class="site-logo site-logo__header">
+                                    <a class="site-logo_link" href="@Url.Action("index","home")">
+                                        <img class="site-logo_img" src="~/images/GTC Logo.png" alt="Logo" style="height:150px;width:250px" />
+                                    </a>
+                                    <span class="site-desc">
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="moduletable moduletable__top-menu2 mod_menu">
+                                <div class="module_content">
+                                    <ul class="menu menu__inline">
+                                        <li class="item-121 @ViewBag.IsIndexActive"><a href="@Url.Action("index","home")">Home</a></li>
+                                        <li class="item-203 @ViewBag.IsServiceActive"><a href="@Url.Action("services","home")">Our Services</a></li>
+                                        <li class="item-142 @ViewBag.IsGalleryActive"><a href="@Url.Action("gallery","home")">Gallery</a></li>
+                                        <li class="item-144 @ViewBag.IsAboutActive"><a href="@Url.Action("about","home")">About</a></li>
+                                        <li class="item-145 @ViewBag.IsContactActive"><a href="@Url.Action("contact","home")">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="navigation">
+                        <div class="tvtma-megamnu">
+                            <div id="tvtma-megamnu">
+                                <ul class="sf-menuW">
+                                    <li class="item-menu item-408 parent drop deeper parent drop tvtma-megamnu-fullwidth megacol-top megacol-header-top count-item1">
+                                        <a data-hover="Glass Tile" class="dropdown-toggle" data-toggle="dropdown" href="/virtuemart_53948/index.php/glass-tile">Glass Tile </a>
+                                        <ul class="level0 chield nav-child list-unstyled drop-menu">
+                                            <li class="item-menu level1 parent deeper drop-submenu">
+                                                <a href="/virtuemart_53948/index.php/glass-tile/lacus-volutpat">Lacus volutpat</a>
+                                                <ul class="level1 chield nav-child list-unstyled drop-menu">
+                                                    <li class="item-menu level2"><a href="/virtuemart_53948/index.php/glass-tile/lacus-volutpat/lorem_ipsum_dolor">Lorem ipsum dolor</a> </li>
+                                                    <li class="item-menu level2"><a href="/virtuemart_53948/index.php/glass-tile/lacus-volutpat/conse_ctetur">Conse ctetur</a> </li>
+                                                    <li class="item-menu level2"><a href="/virtuemart_53948/index.php/glass-tile/lacus-volutpat/elit_sed_do">Elit sed do</a> </li>
+                                                    <li class="item-menu level2"><a href="/virtuemart_53948/index.php/glass-tile/lacus-volutpat/incididunt%20ut">Incididunt ut</a> </li>
+                                                    <li class="item-menu level2"><a href="/virtuemart_53948/index.php/glass-tile/lacus-volutpat/phasellus%20tempus">Phasellus tempus</a> </li>
+                                                    <li class="item-menu level2"><a href="/virtuemart_53948/index.php/glass-tile/lacus-volutpat/dui%20ac%20pretium">Dui ac pretium</a> </li>
+                                                </ul>
+                                            </li>
+                                            <li class="item-menu level1 parent deeper drop-submenu">
+                                                <a href="/virtuemart_53948/index.php/glass-tile/vivamus-molesite">Vivamus molestie</a>
+                                                <ul class="level1 chield nav-child list-unstyled drop-menu">
+                                                    <li class="item-menu level2"><a href="/virtuemart_53948/index.php/glass-tile/vivamus-molesite/volutpat%20metus">Volutpat metus</a> </li>
+                                                    <li class="item-menu level2"><a href="/virtuemart_53948/index.php/glass-tile/vivamus-molesite/ac%20egestas%20neque">Ac egestas neque</a> </li>
+                                                    <li class="item-menu level2"><a href="/virtuemart_53948/index.php/glass-tile/vivamus-molesite/vestibulum">Vestibulum</a> </li>
+                                                    <li class="item-menu level2"><a href="/virtuemart_53948/index.php/glass-tile/vivamus-molesite/proin%20lobortis">Proin lobortis</a> </li>
+                                                    <li class="item-menu level2"><a href="/virtuemart_53948/index.php/glass-tile/vivamus-molesite/ut%20vitae%20neque">Ut vitae neque</a> </li>
+                                                </ul>
+                                            </li>
+                                            <li class="item-menu level1 parent deeper drop-submenu">
+                                                <a href="/virtuemart_53948/index.php/glass-tile/morbi-tristique">Morbi tristique</a>
+                                                <ul class="level1 chield nav-child list-unstyled drop-menu">
+                                                    <li class="item-menu level2"><a href="/virtuemart_53948/index.php/glass-tile/morbi-tristique/sed%20in%20dui">Sed in dui</a> </li>
+                                                    <li class="item-menu level2"><a href="/virtuemart_53948/index.php/glass-tile/morbi-tristique/proin%20viverra">Proin viverra</a> </li>
+                                                    <li class="item-menu level2"><a href="/virtuemart_53948/index.php/glass-tile/morbi-tristique/proin%20hendrerit">Proin hendrerit</a> </li>
+                                                    <li class="item-menu level2"><a href="/virtuemart_53948/index.php/glass-tile/morbi-tristique/curabitur%20rhoncus">Curabitur rhoncus</a> </li>
+                                                    <li class="item-menu level2"><a href="/virtuemart_53948/index.php/glass-tile/morbi-tristique/aliquet-a-iaculis">aliquet a iaculis</a> </li>
+                                                </ul>
+                                            </li>
+                                            <li class="item-menu level1 parent deeper drop-submenu">
+                                                <a href="/virtuemart_53948/index.php/glass-tile/turpis-dui-sagittis">Turpis dui sagittis</a>
+                                                <ul class="level1 chield nav-child list-unstyled drop-menu">
+                                                    <li class="item-menu level2"><a href="/virtuemart_53948/index.php/glass-tile/turpis-dui-sagittis/litora%20torquent">Litora torquent</a> </li>
+                                                    <li class="item-menu level2"><a href="/virtuemart_53948/index.php/glass-tile/turpis-dui-sagittis/nulla%20dapibus">Nulla dapibus</a> </li>
+                                                    <li class="item-menu level2"><a href="/virtuemart_53948/index.php/glass-tile/turpis-dui-sagittis/fusce%20condimentum">Fusce condimentum</a> </li>
+                                                    <li class="item-menu level2"><a href="/virtuemart_53948/index.php/glass-tile/turpis-dui-sagittis/morbi%20vel%20tortor">Morbi vel tortor</a> </li>
+                                                    <li class="item-menu level2"><a href="/virtuemart_53948/index.php/glass-tile/turpis-dui-sagittis/faucibus-et-aliquam">faucibus et aliquam</a> </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="list-unstyled drop-menu drop-menu-mega sf-mega">
+                                            <li>
+                                                <div class="row">
+                                                    <div class="tvtma-megamnu-content">
+                                                        <ul class="col-md-3 col-sm-3 list-unstyled block">
+                                                            <li class="item-menu item-400 parent drop megacol-header-top">
+                                                                <a data-hover="Morbi tristique" href="/virtuemart_53948/index.php/glass-tile/morbi-tristique">Morbi tristique </a>
+                                                                <ul class="level0 chield nav-child list-unstyled drop-menu">
+                                                                    <li class="item-menu level1"><a href="/virtuemart_53948/index.php/glass-tile/morbi-tristique/sed%20in%20dui">Sed in dui</a> </li>
+                                                                    <li class="item-menu level1"><a href="/virtuemart_53948/index.php/glass-tile/morbi-tristique/proin%20viverra">Proin viverra</a> </li>
+                                                                    <li class="item-menu level1"><a href="/virtuemart_53948/index.php/glass-tile/morbi-tristique/proin%20hendrerit">Proin hendrerit</a> </li>
+                                                                    <li class="item-menu level1"><a href="/virtuemart_53948/index.php/glass-tile/morbi-tristique/curabitur%20rhoncus">Curabitur rhoncus</a> </li>
+                                                                    <li class="item-menu level1"><a href="/virtuemart_53948/index.php/glass-tile/morbi-tristique/aliquet-a-iaculis">aliquet a iaculis</a> </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul><ul class="col-md-3 col-sm-3 list-unstyled block">
+                                                            <li class="item-menu item-401 parent drop megacol-header-top">
+                                                                <a data-hover="Lacus volutpat" href="/virtuemart_53948/index.php/glass-tile/lacus-volutpat">Lacus volutpat </a>
+                                                                <ul class="level0 chield nav-child list-unstyled drop-menu">
+                                                                    <li class="item-menu level1"><a href="/virtuemart_53948/index.php/glass-tile/lacus-volutpat/lorem_ipsum_dolor">Lorem ipsum dolor</a> </li>
+                                                                    <li class="item-menu level1"><a href="/virtuemart_53948/index.php/glass-tile/lacus-volutpat/conse_ctetur">Conse ctetur</a> </li>
+                                                                    <li class="item-menu level1"><a href="/virtuemart_53948/index.php/glass-tile/lacus-volutpat/elit_sed_do">Elit sed do</a> </li>
+                                                                    <li class="item-menu level1"><a href="/virtuemart_53948/index.php/glass-tile/lacus-volutpat/incididunt%20ut">Incididunt ut</a> </li>
+                                                                    <li class="item-menu level1"><a href="/virtuemart_53948/index.php/glass-tile/lacus-volutpat/phasellus%20tempus">Phasellus tempus</a> </li>
+                                                                    <li class="item-menu level1"><a href="/virtuemart_53948/index.php/glass-tile/lacus-volutpat/dui%20ac%20pretium">Dui ac pretium</a> </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul><ul class="col-md-3 col-sm-3 list-unstyled block">
+                                                            <li class="item-menu item-402 parent drop megacol-header-top">
+                                                                <a data-hover="Turpis dui sagittis" href="/virtuemart_53948/index.php/glass-tile/turpis-dui-sagittis">Turpis dui sagittis </a>
+                                                                <ul class="level0 chield nav-child list-unstyled drop-menu">
+                                                                    <li class="item-menu level1"><a href="/virtuemart_53948/index.php/glass-tile/turpis-dui-sagittis/litora%20torquent">Litora torquent</a> </li>
+                                                                    <li class="item-menu level1"><a href="/virtuemart_53948/index.php/glass-tile/turpis-dui-sagittis/nulla%20dapibus">Nulla dapibus</a> </li>
+                                                                    <li class="item-menu level1"><a href="/virtuemart_53948/index.php/glass-tile/turpis-dui-sagittis/fusce%20condimentum">Fusce condimentum</a> </li>
+                                                                    <li class="item-menu level1"><a href="/virtuemart_53948/index.php/glass-tile/turpis-dui-sagittis/morbi%20vel%20tortor">Morbi vel tortor</a> </li>
+                                                                    <li class="item-menu level1"><a href="/virtuemart_53948/index.php/glass-tile/turpis-dui-sagittis/faucibus-et-aliquam">faucibus et aliquam</a> </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul><ul class="col-md-3 col-sm-3 list-unstyled block">
+                                                            <li class="item-menu item-411 parent drop megacol-header-top">
+                                                                <a data-hover="Vivamus molesite" href="/virtuemart_53948/index.php/glass-tile/vivamus-molesite">Vivamus molesite </a>
+                                                                <ul class="level0 chield nav-child list-unstyled drop-menu">
+                                                                    <li class="item-menu level1"><a href="/virtuemart_53948/index.php/glass-tile/vivamus-molesite/volutpat%20metus">Volutpat metus</a> </li>
+                                                                    <li class="item-menu level1"><a href="/virtuemart_53948/index.php/glass-tile/vivamus-molesite/ac%20egestas%20neque">Ac egestas neque</a> </li>
+                                                                    <li class="item-menu level1"><a href="/virtuemart_53948/index.php/glass-tile/vivamus-molesite/vestibulum">Vestibulum</a> </li>
+                                                                    <li class="item-menu level1"><a href="/virtuemart_53948/index.php/glass-tile/vivamus-molesite/proin%20lobortis">Proin lobortis</a> </li>
+                                                                    <li class="item-menu level1"><a href="/virtuemart_53948/index.php/glass-tile/vivamus-molesite/ut%20vitae%20neque">Ut vitae neque</a> </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    <li class="item-menu item-383 parent drop count-item2">
+                                        <a data-hover="METAL TILE" href="/virtuemart_53948/index.php/metal-tile">METAL TILE </a>
+                                        <ul class="level0 chield nav-child list-unstyled drop-menu">
+                                            <li class="item-menu level1"><a href="/virtuemart_53948/index.php/metal-tile/lobortis-eleifend">Lobortis eleifend</a> </li>
+                                            <li class="item-menu level1"><a href="/virtuemart_53948/index.php/metal-tile/vel-lacus-volutpat">Vel lacus volutpat</a> </li>
+                                            <li class="item-menu level1"><a href="/virtuemart_53948/index.php/metal-tile/ut-mi-erat,-co">Ut mi erat, co</a> </li>
+                                            <li class="item-menu level1"><a href="/virtuemart_53948/index.php/metal-tile/sed-in-dui-et">Sed in dui et</a> </li>
+                                        </ul>
+                                    </li>
+                                    <li class="item-menu item-409 count-item3"><a data-hover="STONE TILE" href="/virtuemart_53948/index.php/stone-tile">STONE TILE </a></li>
+                                    <li class="item-menu item-410 count-item4"><a data-hover="CERAMIC TILE" href="/virtuemart_53948/index.php/ceramic-tile">CERAMIC TILE </a></li>
+                                    <li class="item-menu item-412 count-item5"><a data-hover="PORCELAIN TILE" href="/virtuemart_53948/index.php/porcelain-tile">PORCELAIN TILE </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <script type="text/javascript">
+                            jQuery(document).ready(function () {
+                                jQuery.noConflict();
+                                jQuery("#tvtma-megamnu ul.sf-menuW  > li.megacol-top > ul.chield").remove("");
+                            });
+                        </script>
+                        <script type="text/javascript">
+                            jQuery(document).ready(function () {
+                                jQuery.noConflict();
+                                // initialise plugins
+                                jQuery('ul.sf-menuW,.sf-mega,.block').superfish({
+                                    hoverClass: 'sfHover',
+                                    pathClass: 'overideThisToUse',
+                                    pathLevels: 1,
+                                    delay: 800,
+                                    speed: 'normal',
+                                    autoArrows: false,
+                                    dropShadows: true,
+                                    disableHI: false,
+                                    easing: "swing",
+                                    onInit: function () { },
+                                    onBeforeShow: function () { },
+                                    onShow: function () { },
+                                    onHide: function () { }
+                                });
+                                jQuery('.navigation .sf-menuW').slicknav({
+                                    label: 'Navigation: ',
+                                    prependTo: '.navigation',
+                                    closeOnClick: true,
+                                    allowParentLinks: true,
+                                    closedSymbol: '',
+                                    openedSymbol: ''
+                                });
+
+                                var ismobile = navigator.userAgent.match(/(iPhone)|(iPod)|(android)|(webOS)/i)
+                                if (ismobile) {
+                                    jQuery('.sf-menuW').sftouchscreen({});
+                                }
+                            });
+                        </script>
+                    </div>
+
+                    @RenderBody()
+
+                    <div id="push"></div>
+                    <div id="footer">
+
+                        <div class="footer-row">
+                            <div class="container">
+                                <div class="footer">
+                                    <div class="row">
+                                        <div class="col-md-3 col-lg-3 col-sm-3 border">
+                                            <div class="moduletable  mod_menu">
+                                                <div class="module_header">
+                                                    <h3 class="module_title">Navigation</h3>
+                                                </div>
+                                                <div class="module_content">
+                                                    <ul class="menu menu__ list foot-nav">
+                                                        <li class="item-121 @ViewBag.IsIndexActive"><a href="@Url.Action("index","home")">Home</a></li>
+                                                        <li class="item-203 @ViewBag.IsServiceActive"><a href="@Url.Action("services","home")">Our Services</a></li>
+                                                        <li class="item-142 @ViewBag.IsGalleryActive"><a href="@Url.Action("gallery","home")">Gallery</a></li>
+                                                        <li class="item-144 @ViewBag.IsAboutActive"><a href="@Url.Action("about","home")">About</a></li>
+                                                        <li class="item-145 @ViewBag.IsContactActive"><a href="@Url.Action("contact","home")">Contact Us</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-lg-3 col-sm-3 border">
+                                            <div class="moduletable  mod_menu">
+                                                <div class="module_header">
+                                                    <h3 class="module_title">CATEGORIES</h3>
+                                                </div>
+                                                <div class="module_content">
+                                                    <ul class="menu menu__ list foot-nav">
+                                                        <li class="item-408 parent"><a href="/virtuemart_53948/index.php/glass-tile">Glass Tile</a></li>
+                                                        <li class="item-383"><a href="/virtuemart_53948/index.php/metal-tile">METAL TILE</a></li>
+                                                        <li class="item-409"><a href="/virtuemart_53948/index.php/stone-tile">STONE TILE</a></li>
+                                                        <li class="item-410"><a href="/virtuemart_53948/index.php/ceramic-tile">CERAMIC TILE</a></li>
+                                                        <li class="item-412"><a href="/virtuemart_53948/index.php/porcelain-tile">PORCELAIN TILE</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-lg-3 col-sm-6 border">
+                                            <div class="moduletable moduletable__social mod_socialmedialinks">
+                                                <div class="module_header">
+                                                    <h3 class="module_title">FOLLOW US</h3>
+                                                </div>
+                                                <div class="module_content">
+                                                    <div class="smile" style="text-align: left ">
+                                                        <div>
+                                                            <a style="margin:3px;" rel="nofollow" href="https://twitter.com" target="_blank">
+                                                                <i class="fa fa-twitter"></i><span>Twitter</span>
+                                                                <img src="https://livedemo00.template-help.com/virtuemart_53948/modules/mod_socialmedialinks/icons/default/size3/twitter.png " alt="Twitter" title="Follow us on Twitter" />
+                                                            </a>
+                                                        </div><div>
+                                                            <a style="margin:3px;" rel="nofollow" href="/virtuemart_53948/www.facebook.com" target="_blank">
+                                                                <i class="fa fa-facebook"></i><span>Facebook</span>
+                                                                <img src="https://livedemo00.template-help.com/virtuemart_53948/modules/mod_socialmedialinks/icons/default/size3/facebook.png " alt="Facebook" title="Follow us on Facebook" />
+                                                            </a>
+                                                        </div><div>
+                                                            <a style="margin:3px;" rel="nofollow" href="#" target="_blank">
+                                                                <i class="fa fa-rss"></i><span>Rss</span>
+                                                                <img src="https://livedemo00.template-help.com/virtuemart_53948/modules/mod_socialmedialinks/icons/default/size3/rss.png " alt="Rss" title="Follow us on Rss" />
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="clr"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-lg-3 col-sm-12 border item4">
+                                            <div class="moduletable  mod_custom">
+                                                <div class="module_header">
+                                                    <h3 class="module_title">Contacts</h3>
+                                                </div>
+                                                <div class="module_content">
+                                                    <div class="custom">
+                                                        <div class="txt1">My Company, 42 avenue des Champs Elysées 75000 Paris France</div>
+                                                        <div class="txt2">0123-456-789</div>
+                                                        <div class="txt2">0123-456-789</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="copyright-row">
+                            <div class="container">
+                                <div class="copyright">
+                                    <div class="moduletable   mod_footer">
+                                        <div class="module_content">
+                                            Copyright &#169; 2016 Ceramica. All Rights Reserved.
+                                        </div>
+                                    </div>
+                                    <div class="moduletable   mod_menu">
+                                        <div class="module_content">
+                                            <ul class="menu menu__">
+                                                <li class="item-367"><a href="/virtuemart_53948/index.php/template-settings">Template Settings</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="totopscroller"></div>
+            </div>
+
+            <script type="text/javascript" src="~/theme589/js/jquery.ui.core.min.js"></script>
+            <script type="text/javascript" src="~/theme589/js/tm-stick-up.js"></script>
+            <script type="text/javascript" src="~/theme589/js/scrollUp.min.js"></script>
+            <script type="text/javascript" src="~/theme589/js/vm/scriptsAll.js"></script>
+            <script type="text/javascript" src="~/theme589/js/animate/wow.js"></script>
+            <script type="text/javascript" src="~/theme589/js/scripts.js"></script>
+        </div>
+    </div>
+</body>
+
+</html>
