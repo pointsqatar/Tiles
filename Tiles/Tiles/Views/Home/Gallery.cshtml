@@ -4,5 +4,162 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Gallery</h2>
+@section GalleryImagePopup
+{
+    <script>
+        jQuery(document).ready(function () {
+            jQuery('.fancybox').fancybox();
+        });
+    </script>
+}
+
+
+<div class="content-box">
+
+    <div class="prod-row">
+        <div class="container">
+            <div class="featured">
+                <div class="moduletable moduletable__new mod_virtuemart_product">
+
+                    <div class="module_header">
+                        <h3 class="module_title">Our Products</h3>
+                    </div>
+
+                    <div class="module_content">
+
+                        <script id="jsVars_js" type="text/javascript">
+                            //<![CDATA[
+                            vmSiteurl = 'https://livedemo00.template-help.com/virtuemart_53948/';
+                            vmLang = '&lang=en';
+                            Virtuemart.addtocart_popup = '1';
+                            vmCartText = '%2$s x %1$s was added to your cart.';
+                            vmCartError = 'There was an error while updating your cart.';
+                            loadingImage = '/virtuemart_53948/components/com_virtuemart/assets/images/facebox/loading.gif';
+                            closeImage = '/virtuemart_53948/components/com_virtuemart/assets/images/fancybox/fancy_close.png';
+                            usefancy = false; //]]>
+                        </script>
+
+                        <script id="ready.vmprices_js" type="text/javascript">
+                            //<![CDATA[
+                            jQuery(document).ready(function ($) {
+                                Virtuemart.product(jQuery("form.product"));
+
+                                /*$("form.js-recalculate").each(function(){
+                                    if ($(this).find(".product-fields").length && !$(this).find(".no-vm-bind").length) {
+                                        var id= $(this).find('input[name="virtuemart_product_id[]"]').val();
+                                        Virtuemart.setproducttype($(this),id);
+
+                                    }
+                                });*/
+                            }); //]]>
+                        </script>
+
+                        <div class="popup-gallery">
+                            <div class="vm-products vm-products__new">
+
+                                <div class="products-listing listing__grid">
+                                    <div class="product item item_product sale" style="width:100%">
+                                        <div class="product_wrap">
+                                            <div class="item_image product_image">
+                                                <a class="fancybox" href="~/images/stories/virtuemart/product/resized/product13_resized.png" title="Ut us dolor apibusgetele mentumvele">
+                                                    <img src="~/images/stories/virtuemart/product/resized/product13_resized.png" alt="product13" class="featuredProductImage" />
+                                                </a>
+                                            </div>
+                                            <div class="fleft-content">
+                                                <h4 class="item_name product_title">
+                                                    <a href="/virtuemart_53948/index.php/ceramic-tile/ut-us-dolor-apibusgetele-mentumvele-detail">Ut us dolor apibusgetele...</a>
+                                                </h4>
+                                                <div class="product_price">
+                                                    <div class="PricesalesPrice vm-display vm-price-value"><span class="PricesalesPrice">$35.00</span></div><div class="PricesalesPriceWithDiscount vm-display vm-price-value"><span class="PricesalesPriceWithDiscount">$38.00</span></div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                                <div class="products-listing listing__grid">
+                                    <div class="product item item_product sale" style="width:100%">
+                                        <div class="product_wrap">
+                                            <div class="item_image product_image">
+                                                <a class="fancybox" href="~/images/stories/virtuemart/product/resized/product01_resized.png" title="Ut us dolor apibusgetele mentumvele">
+                                                    <img src="~/images/stories/virtuemart/product/resized/product01_resized.png" alt="product13" class="featuredProductImage" />
+                                                </a>
+                                            </div>
+                                            <div class="fleft-content">
+                                                <h4 class="item_name product_title">
+                                                    <a href="/virtuemart_53948/index.php/ceramic-tile/ut-us-dolor-apibusgetele-mentumvele-detail">Ut us dolor apibusgetele...</a>
+                                                </h4>
+                                                <div class="product_price">
+                                                    <div class="PricesalesPrice vm-display vm-price-value"><span class="PricesalesPrice">$35.00</span></div><div class="PricesalesPriceWithDiscount vm-display vm-price-value"><span class="PricesalesPriceWithDiscount">$38.00</span></div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <script id="box_js" type="text/javascript">
+                        //<![CDATA[
+                        jQuery(document).ready(function ($) {
+                            $('div#full-tos').hide();
+                            $('a#terms-of-service').click(function (event) {
+                                event.preventDefault();
+                                $.facebox({ div: '#full-tos' }, 'my-groovy-style');
+                            });
+                        });
+
+                        //]]> </script>
+
+                    <script id="updDynamicListeners_js" type="text/javascript">
+                        //<![CDATA[
+                        jQuery(document).ready(function () { // GALT: Start listening for dynamic content update.
+                            // If template is aware of dynamic update and provided a variable let's
+                            // set-up the event listeners.
+                            if (Virtuemart.container)
+                                Virtuemart.updateDynamicUpdateListeners();
+
+                        }); //]]>
+                    </script>
+
+                    <script id="updateChosen_js" type="text/javascript">
+                        //<![CDATA[
+                        if (typeof Virtuemart === "undefined")
+                            var Virtuemart = {};
+                        Virtuemart.updateChosenDropdownLayout = function () {
+                            var vm2string = { editImage: 'edit image', select_all_text: 'Select all', select_some_options_text: 'Available for all' };
+                            jQuery(function ($) {
+                                jQuery(".vm-chzn-select").chosen({ enable_select_all: true, select_all_text: vm2string.select_all_text, select_some_options_text: vm2string.select_some_options_text, disable_search_threshold: 5 });
+                            });
+                        }
+                        Virtuemart.updateChosenDropdownLayout(); //]]>
+                    </script>
+
+                    <script id="vm.countryState_js" type="text/javascript">
+                        //<![CDATA[
+                        jQuery(function ($) {
+                            $("#virtuemart_country_id").vm2front("list", { dest: "#virtuemart_state_id", ids: "", prefiks: "" });
+                        });
+                        //]]> </script>
+
+                    <script id="vm.countryStateshipto__js" type="text/javascript">
+                        //<![CDATA[
+                        jQuery(function ($) {
+                            $("#shipto_virtuemart_country_id").vm2front("list", { dest: "#shipto_virtuemart_state_id", ids: "", prefiks: "shipto_" });
+                        });
+                        //]]> </script>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
 

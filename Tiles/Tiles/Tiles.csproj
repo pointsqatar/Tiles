@@ -102,6 +102,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="facnybox\blank.gif" />
+    <Content Include="facnybox\fancybox_loading%402x.gif" />
+    <Content Include="facnybox\fancybox_loading.gif" />
+    <Content Include="facnybox\fancybox_overlay.png" />
+    <Content Include="facnybox\fancybox_sprite%402x.png" />
+    <Content Include="facnybox\fancybox_sprite.png" />
+    <Content Include="facnybox\helpers\fancybox_buttons.png" />
+    <Content Include="facnybox\helpers\jquery.fancybox-buttons.css" />
+    <Content Include="facnybox\helpers\jquery.fancybox-buttons.js" />
+    <Content Include="facnybox\helpers\jquery.fancybox-media.js" />
+    <Content Include="facnybox\helpers\jquery.fancybox-thumbs.css" />
+    <Content Include="facnybox\helpers\jquery.fancybox-thumbs.js" />
+    <Content Include="facnybox\jquery.fancybox.css" />
+    <Content Include="facnybox\jquery.fancybox.js" />
+    <Content Include="facnybox\jquery.fancybox.pack.js" />
     <Content Include="Global.asax" />
     <Content Include="images\active-sf.jpg" />
     <Content Include="images\apple-touch-icon-114x114-precomposed.png" />

@@ -30,6 +30,15 @@
     <link rel="stylesheet" href="~/virtuemart_53948/components/com_virtuemart/assets/css/facebox.css?vmver=8828" type="text/css" />
     <link rel="stylesheet" href="~/virtuemart_53948/components/com_virtuemart/assets/css/chosen.css?vmver=8828" type="text/css" />
     <link rel="stylesheet" href="~/virtuemart_53948/media/css/modal.css" type="text/css" />
+    <script src="~/virtuemart_53948/media/js/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="~/theme589/js/jquery.ui.core.min.js"></script>
+    <link href="~/facnybox/jquery.fancybox.css" rel="stylesheet" />
+    <script src="~/facnybox/jquery.fancybox.js"></script>
+    <link href="~/facnybox/helpers/jquery.fancybox-buttons.css" rel="stylesheet" />
+    <link href="~/facnybox/helpers/jquery.fancybox-thumbs.css" rel="stylesheet" />
+    <script src="~/facnybox/helpers/jquery.fancybox-buttons.js"></script>
+    <script src="~/facnybox/helpers/jquery.fancybox-media.js"></script>
+    <script src="~/facnybox/helpers/jquery.fancybox-thumbs.js"></script>
     <style type="text/css">
         #map_canvas-174 {
             margin: 0;
@@ -46,7 +55,7 @@
     </style>
     <script src="~/virtuemart_53948/media/js/mootools-core.js" type="text/javascript"></script>
     <script src="~/virtuemart_53948/media/js/core.js" type="text/javascript"></script>
-    <script src="~/virtuemart_53948/media/js/jquery.min.js" type="text/javascript"></script>
+    
     <script src="~/virtuemart_53948/media/js/jquery-noconflict.js" type="text/javascript"></script>
     <script src="~/virtuemart_53948/media/js/jquery-migrate.min.js" type="text/javascript"></script>
     <script src="~/virtuemart_53948/media/js/punycode.js" type="text/javascript"></script>
@@ -54,7 +63,7 @@
     <script src="~/virtuemart_53948/media/js/mootools-more.js" type="text/javascript"></script>
     <script src="~/virtuemart_53948/media/js/bootstrap.min.js" type="text/javascript"></script>
     <script src="~/virtuemart_53948/media/js/html5fallback.js" type="text/javascript"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false" type="text/javascript"></script>
+    
     <script src="https://livedemo00.template-help.com/virtuemart_53948/modules/mod_bootstrapmegamenu/js/superfish.js" type="text/javascript"></script>
     <script src="https://livedemo00.template-help.com/virtuemart_53948/modules/mod_bootstrapmegamenu/js/hoverIntent.js" type="text/javascript"></script>
     <script src="https://livedemo00.template-help.com/virtuemart_53948/modules/mod_bootstrapmegamenu/js/sftouchscreen.js" type="text/javascript"></script>
@@ -410,13 +419,14 @@
                 </div>
                 <div id="totopscroller"></div>
             </div>
-
-            <script type="text/javascript" src="~/theme589/js/jquery.ui.core.min.js"></script>
+            
+            
             <script type="text/javascript" src="~/theme589/js/tm-stick-up.js"></script>
             <script type="text/javascript" src="~/theme589/js/scrollUp.min.js"></script>
             <script type="text/javascript" src="~/theme589/js/vm/scriptsAll.js"></script>
             <script type="text/javascript" src="~/theme589/js/animate/wow.js"></script>
             <script type="text/javascript" src="~/theme589/js/scripts.js"></script>
+            @RenderSection("GalleryImagePopup",false)
         </div>
     </div>
 </body>
