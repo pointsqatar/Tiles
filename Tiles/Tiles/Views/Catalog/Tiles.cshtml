@@ -1,0 +1,62 @@
+﻿
+@{
+    ViewBag.Title = "Tiles";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    string imagePath = Server.MapPath("~") + "images\\TilesCatalog";
+    var tilesCatalog = new DirectoryInfo(imagePath).GetFiles();
+}
+
+@section GalleryImagePopup
+{
+    <script>
+        jQuery(document).ready(function () {
+            jQuery('.fancybox').fancybox();
+        });
+    </script>
+}
+<div class="main-content">
+    <div class="page category-view">
+        <div class="page_heading">
+            <h1 class="page_title" style="border-bottom:0px;color:azure;margin-bottom:0px">Tiles Catalog</h1>
+        </div>
+    </div>
+</div>
+
+<div class="content-box">
+
+    <div class="prod-row">
+        <div class="container">
+            <div class="featured">
+                <div class="moduletable moduletable__new mod_virtuemart_product">
+                    <div class="module_content">
+                        <div class="popup-gallery">
+                            <div class="vm-products vm-products__new">
+                                @foreach (var item in tilesCatalog)
+                                {
+                                    <div class="products-listing listing__grid">
+                                        <div class="product item item_product sale" style="width:100%">
+                                            <div class="product_wrap">
+                                                <div class="item_image product_image">
+                                                    <a class="fancybox" href="~/images/TilesCatalog/@item" title="@item.ToString().Split('.')[0]">
+                                                        <img src="~/images/TilesCatalog/@item" alt="product13" class="featuredProductImage" />
+                                                    </a>
+                                                </div>
+                                                <div class="fleft-content">
+                                                    <h4 class="item_name product_title">
+                                                        <a>@item.ToString().Split('.')[0]</a>
+                                                    </h4>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
